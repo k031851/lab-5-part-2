@@ -3,8 +3,7 @@
 on:
   push:
     branches: [ "main" ]
-
-jobs:
+  workflow_dispatch:jobs:
   build:
     runs-on: ubuntu-latest
     steps:
@@ -63,3 +62,4 @@ jobs:
           tags: |
             hyungjunchoi1/lab-5-part-2:latest
             hyungjunchoi1/lab-5-part-2:${{ github.sha }}
+
